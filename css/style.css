@@ -34,14 +34,7 @@
 }
 
 .popartGrad {
-    background: radial-gradient(at 40% 20%, var(--primary) 0px, transparent 50%),
-    radial-gradient(at 90% 0%, #ea6577 0px, transparent 50%),
-    radial-gradient(at 0% 50%, #ffeb3b 0px, transparent 50%),
-    radial-gradient(at 80% 50%, #ffeb3b 0px, transparent 50%),
-    radial-gradient(at 0% 100%, #ff9800 0px, transparent 50%),
-    radial-gradient(at 80% 100%, #ffc107 0px, transparent 50%),
-    radial-gradient(at 0% 0%, #ff9800 0px, transparent 50%) no-repeat;
-
+    background: radial-gradient(at 40% 20%, #03a9f4 0px, transparent 50%), radial-gradient(at 90% 0%, #f324e3 0px, transparent 50%), radial-gradient(at 0% 50%, #00bcd4 0px, transparent 50%), radial-gradient(at 80% 50%, #34e8ff 0px, transparent 50%), radial-gradient(at 0% 100%, #18e5ff 0px, transparent 50%), radial-gradient(at 80% 100%, #2196f3 0px, transparent 50%), radial-gradient(at 0% 0%, #1adf8d 0px, transparent 50%) no-repeat;
 }
 
 .stripes {
@@ -228,10 +221,11 @@
     position: absolute;
     background: var(--light);
     padding: 8px 24px;
-    color: var(--primary);
+    color: var(--darker);
     left: 50%;
     transform: translate(-50%, 50%);
     font-size: 24px;
+    white-space: nowrap;
 }
 
 .heroBanner__button:hover {
@@ -620,7 +614,7 @@ img {
 .navbar-default .navbar-nav > .active > a,
 .navbar-default .navbar-nav > .active > a:hover,
 .navbar-default .navbar-nav > .active > a:focus {
-    color: rgba(24, 0, 108, 1);
+    color: var(--primary);
     background-color: transparent;
 }
 
@@ -1241,14 +1235,11 @@ a.learn:hover {
 }
 
 .footer .links {
-    margin-top: 25px;
     display: flex;
     flex-flow: row wrap;
-    justify-content: center;
     align-content: space-between;
     margin-bottom: 25px;
-    border-top: 4px solid;
-    padding-top: 30px;
+    flex-direction: column;
 }
 
 .footer .links a {
@@ -1274,6 +1265,10 @@ a.learn:hover {
 
 .footer img {
     border-radius: 14px;
+    max-height: 100px;
+    width: auto;
+    margin: auto;
+    display: block;
 }
 
 .footer-left-ltpwr ul li {
@@ -2330,8 +2325,8 @@ form .form-hint b {
 }
 
 #sub_menu a:hover {
-    color: rgba(224, 129, 226, 1);
-    text-shadow: 0 0 10px rgba(224, 129, 226, 1);
+    color: var(--primary);
+
 }
 
 #sub_menu {
@@ -2344,7 +2339,7 @@ form .form-hint b {
     list-style: none;
     margin-top: 0px;
     border-left: 2px solid rgba(224, 129, 226, 1);
-    background-color: #fff;
+    background-color: var(--darker);
 }
 
 .main #sub_menu {
@@ -4108,7 +4103,13 @@ h2.terms_title {
         width: 32px;
         background-size: 58px;
     }
-
+    .footer .links {
+        justify-content: space-evenly;
+    }
+    .main_container.heroBanner .frames {
+        padding: 0 ;
+        justify-content: space-evenly;
+    }
     .trend-ltpwrlayouts h4,
     .services-agileits-ltpwrlayouts h4 {
         font-size: 19px;
