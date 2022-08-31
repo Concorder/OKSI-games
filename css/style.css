@@ -6,6 +6,7 @@
     --secondary: #fd7f6a;
     --light: #fff;
     --darker: #91239f;
+    --secondaryDarker: #413489;
     --highlight: #ffba28;
     --high_grad: rgba(24, 0, 108, 1);
     --medium_grad: linear-gradient(45deg, #394d79, #091555);
@@ -211,7 +212,7 @@
 
 .game_list p {
     margin: 0px auto 60px;
-    max-width: 40%;
+    max-width: 450px;
     font-size: 18px;
 }
 
@@ -513,7 +514,9 @@ img {
     width: 100%;
     padding: 10px 0;
     position: absolute;
+
 }
+
 
 .header + div {
     min-height: 100vh;
@@ -3952,7 +3955,15 @@ h2.terms_title {
 }
 
 @media screen and (max-width: 768px) {
+    #navbar {
+        background: #413489f5;
+        border-radius: 10px;
+        margin: 0;
 
+    }
+    #navbar a {
+        text-align: center;
+    }
     .collection-text p {
         padding: 0 10px;
     }
@@ -4103,8 +4114,20 @@ h2.terms_title {
         width: 32px;
         background-size: 58px;
     }
+    .frames {
+        margin: 110px 20px;
+    }
+
     .footer .links {
         justify-content: space-evenly;
+        margin: auto;
+    }
+    .footer .links a{
+        text-align: center;
+        font-size: 18px;
+    }
+    .footer h4{
+        text-align: center;
     }
     .main_container.heroBanner .frames {
         padding: 0 ;
@@ -4114,6 +4137,7 @@ h2.terms_title {
     .services-agileits-ltpwrlayouts h4 {
         font-size: 19px;
     }
+
 
     .service-grid-agileits {
         width: calc(50% - 20px);
@@ -4298,8 +4322,9 @@ h2.terms_title {
 
 @media screen and (max-width: 640px) {
     .footer-left-ltpwr ul li h6 {
-        font-size: 14px;
+        font-size: 18px;
         margin-left: 5px;
+        display: inline;
     }
 
     .footer-left-ltpwr .glyphicon {
@@ -4308,6 +4333,7 @@ h2.terms_title {
 
     .pop-up-content-agileits-ltpwrlayouts h4 {
         margin-bottom: 8px;
+
     }
 
     .about-grid-left-agileits-ltpwrlayouts {
@@ -4365,10 +4391,9 @@ h2.terms_title {
     .footer-middle-ltpwr {
         margin: 30px 0;
     }
-
-    .footer h4 {
-        margin-bottom: 20px;
-    }
+ul li{
+    margin: auto;
+}
 
     .footer-right-ltpwr h4 {
         margin-bottom: 10px;
