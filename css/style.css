@@ -150,13 +150,7 @@
 }
 
 .main_container.popartGrad {
-    background: url(../images/dots.jpg), radial-gradient(at 40% 20%, var(--primary) 0px, transparent 50%),
-    radial-gradient(at 90% 0%, #ea6577 0px, transparent 50%),
-    radial-gradient(at 0% 50%, #ffeb3b 0px, transparent 50%),
-    radial-gradient(at 80% 50%, #ffeb3b 0px, transparent 50%),
-    radial-gradient(at 0% 100%, #ff9800 0px, transparent 50%),
-    radial-gradient(at 80% 100%, #ffc107 0px, transparent 50%),
-    radial-gradient(at 0% 0%, #ff9800 0px, transparent 50%) no-repeat;
+    background: url(../images/dots.jpg), radial-gradient(at 40% 20%, #03a9f4 0px, transparent 50%), radial-gradient(at 90% 0%, #f324e3 0px, transparent 50%), radial-gradient(at 0% 50%, #136aaf 0px, transparent 50%), radial-gradient(at 80% 50%, #34e8ff 0px, transparent 50%), radial-gradient(at 0% 100%, #18e5ff 0px, transparent 50%), radial-gradient(at 80% 100%, #2196f3 0px, transparent 50%), radial-gradient(at 0% 0%, #4b12b1 0px, transparent 50%) no-repeat;
     background-blend-mode: darken;
 }
 
@@ -239,7 +233,8 @@
     transform: translate(-50%, 50%);
     font-size: 24px;
 }
-.heroBanner__button:hover{
+
+.heroBanner__button:hover {
     color: var(--secondary);
 }
 
@@ -273,12 +268,13 @@
     z-index: 4;
     position: relative;
 }
-.main_container__heading:nth-child(3)::before{
+
+.main_container__heading:nth-child(3)::before {
     content: 'Online';
     position: absolute;
     right: 0;
     top: 50%;
-    transform: translate(0,-50%);
+    transform: translate(0, -50%);
     font-size: 42px;
     background: var(--darker);
     padding: 8px;
@@ -321,9 +317,11 @@
     display: inline-block;
     width: 100%;
 }
+
 .heroBanner .line span:nth-child(1) {
     width: 50px;
 }
+
 .game_list .line span:nth-child(1) {
     width: 30%;
     display: inline-block;
