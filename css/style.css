@@ -200,7 +200,7 @@
 }
 
 .frames.game_list {
-    padding: 25px 0 60px;
+    padding: 60px 0 60px;
 
 }
 
@@ -223,7 +223,7 @@
 }
 
 .game_list p {
-    margin: 15px auto;
+    margin: 0px auto 60px;
     max-width: 40%;
     font-size: 18px;
 }
@@ -307,7 +307,6 @@
 .line span:nth-child(1) {
     width: 20%;
     display: inline-block;
-
 }
 
 .line span:nth-child(2) {
@@ -322,7 +321,9 @@
     display: inline-block;
     width: 100%;
 }
-
+.heroBanner .line span:nth-child(1) {
+    width: 50px;
+}
 .game_list .line span:nth-child(1) {
     width: 30%;
     display: inline-block;
@@ -525,7 +526,6 @@ img {
 .header + div {
     min-height: 100vh;
     min-height: calc(var(--vh) * 100);
-    padding-top: 50px;
 
     background-blend-mode: darken;
 }
