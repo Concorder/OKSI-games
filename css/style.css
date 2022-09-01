@@ -1321,6 +1321,8 @@ a.learn:hover {
 .footer-left-ltpwr ul li a {
     font-size: 14px;
     color: #fff;
+    display: inline-block;
+    vertical-align: top;
 }
 
 .footer-middle-wthree {
