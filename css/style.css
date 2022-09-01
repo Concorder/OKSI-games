@@ -1258,6 +1258,7 @@ a.learn:hover {
     padding: 35px 0px;
     color: var(--light);
     margin-top: 50px;
+    background: #511e5e;
 }
 
 .footer .links {
